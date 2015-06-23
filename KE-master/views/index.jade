@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  div.hero-unit
+    h1
+        i.fa.fa-home 
+        &nbsp;
+        span= title
+
+  div.row-fluid
+
+    div.col-lg-8.col-md-8.col-sm-8.col-xs.8
+        h2 Welcome to my website
+        p I'm a web enthusiast, soon to be an MSc holder in Information Systems and Technology. Thanks for visiting my site!
+        p I'm adding new 
+            span
+              a(href='/other-projects') 
+                 span projects 
+              span all the time. Perhaps there is something with which I can help you?
+        p I'm currently seeking a full-time permanent job in web development. Please feel free to 
+            span               
+                a(href='/contact') 
+                    span get in touch 
+            span if you know of any tasty opportunities in the London area. 
+    div.col-lg-4.col-md-4.col-sm-4.col-xs.4
+        h2 What's new with me?
+        a.twitter-timeline(href='https://twitter.com/Cloud_Quinn', data-widget-id='612975228956868608')
+            Tweets by @Cloud_Quinn
+            
+            block scripts
+    script(src='/twitter/widget.js',defer='deferred')
+
+
+
+    //<a class="twitter-timeline" href="https://twitter.com/Cloud_Quinn" data-widget-id="612975228956868608">Tweets by @Cloud_Quinn</a>
+//<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

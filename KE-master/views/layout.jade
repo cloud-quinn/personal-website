@@ -1,0 +1,108 @@
+doctype 5
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width')
+    link(rel='stylesheet', href='css/site.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    link(rel="stylesheet", href='http://fonts.googleapis.com/css?family=Special+Elite')    
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")    
+    script(src="js/site.js")
+
+
+  body
+    
+
+          // div.navbar
+            nav.navbar-inner
+                a.brand(href='/') 
+                    i.fa.fa-home
+                    span &nbsp;home
+                ul.nav
+                    
+                    li(class= active == 'Bio' ? 'active' : '')
+                        a(href='/bio') 
+                            i.icon-rocket
+                            span &nbsp;bio
+                    li(class= active == 'WebCoder' ? 'active' : '')
+                        a(href='/webcoder')
+                            i.icon-bookmark
+                            span &nbsp;WebCoder
+                    li(class= active == 'Projects' ? 'active' : '')
+                        a(href='/other-projects') 
+                            i.icon-beaker
+                            span &nbsp;other projects
+                    li(class= active == 'Contact' ? 'active' : '')
+                        a(href='/contact') 
+                            i.icon-comment
+                            span &nbsp;contact
+
+    nav.navbar.navbar-default.navbar-fixed-top
+            div.container-fluid
+                        ul.nav.navbar-nav.hd
+                            li
+                                a#hotdog.hotdog
+                                    i.fa.fa-bars.hotdog
+                        ul.nav.navbar-nav.menu
+                            li
+                                a(href='/') 
+                                    i.fa.fa-home
+                                    &nbsp;home
+                            li
+                                a(href='/bio') 
+                                    i.fa.fa-bookmark-o
+                                    &nbsp;bio
+                            li
+                                a(href='/webcoder')
+                                    i.fa.fa-desktop
+                                    &nbsp;WebCoder
+                            li
+                                a(href='/other-projects') 
+                                    i.fa.fa-cloud
+                                    &nbsp;other projects
+                            li
+                                a(href='/contact') 
+                                    i.fa.fa-envelope-o
+                                    &nbsp;contact
+
+    div.container-fluid.top
+            h1 Cloud Quinn
+            h2 Web Developer
+        
+    article.container
+        hr
+        block content
+        hr
+    footer                        
+        span &copy; Cloud Quinn 
+                            = new Date().getFullYear()
+       // div.navbar
+            div.navbar-inner
+                ul.nav
+                    li
+
+                    li
+                        a.st_fblike(displayText='Facebook Like')
+                    li
+                        a.st_twitter(displayText='Tweet this')
+                    li
+                        a.st_twitterfollow(displayText='Follow', st_username='KayleeEluvian')
+                    li
+                        a.st_linkedin(displayText='LinkedIn')
+                    li
+                        a.st_tumblr(displayText='Tumblr')
+                    li
+                        a.st_googleplus(displayText='Google +')
+                    li
+                        a.st_pinterest(displayText='Pin this')
+                    li
+                        a.st_email(displayText='Email page')
+    script(src="/jquery/jquery.min.js")
+    script(src='/bootstrap/bootstrap.min.js')
+    script(src='/modernizr/modernizr.min.js')
+    script(src='/google_analytics/ga.min.js')
+    script(src="/share_this/sharethis.min.js")
+    block scripts

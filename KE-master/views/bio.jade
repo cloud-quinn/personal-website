@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    div.hero-unit
+      h1
+        i.fa.fa-bookmark-o 
+        &nbsp;
+        span= title
+
+      p I'm a twenty-something code enthusiast currently dwelling in the south east of England.
+      p In addition to coding, I enjoy  
+            ul
+                li music: I used to play bass guitar for a function band
+                li travel: I spent just under a year teaching English to Japanese professionals in Tokyo
+                li reading: everything from tech blogs to Dostoyevsky
+                li films, TV, and video games: yes, I did rename myself after a certain Final Fantasy VII character - it does help people remember me!
+                li cooking: especially Japanese food
+                li taking in dinner and a play / opera in London, when I can afford to!
+
+//block scripts
+    script(src='/js/lightbox.js')
+    script
+        $(document).ready(function(){
+            $('.images img').each(function(index, item){
+                $(item).attr('style','cursor: pointer;')
+                $(item).lightbox();
+            });
+        });
